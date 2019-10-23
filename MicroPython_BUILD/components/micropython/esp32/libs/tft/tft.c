@@ -3216,6 +3216,7 @@ int TFT_read_touch(int *x, int* y, uint8_t raw)
     }
 
     // Calibrate the result
+    // todo: calibration seems to be different for the the LOLIN TFT (hacked in python code)
 	int tmp;
 	int xleft   = (tp_calx >> 16) & 0x3FFF;
 	int xright  = tp_calx & 0x3FFF;
